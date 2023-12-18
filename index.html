@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>calculator</title>
+        <meta name="author" content="Ahmed Shalaby">
+
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="text ">
+                <input type="text" name="display" id="display">
+            </div>
+            
+            <div class="buttons">
+                <div>
+                    <button value="AC" onclick="display.value=''">AC</button>
+                    <button value="DE" onclick="display.value=display.value.slice(0,-1)">DE</button>
+                    <button value="." onclick="display.value+=this.value">.</button>
+                    <button value="/" onclick="display.value+=this.value">/</button>
+
+                </div>
+                    <button value="7" onclick="display.value+=7">7</button>
+                    <button value="8" onclick="display.value+=8 ">8</button>
+                    <button value="9"onclick="display.value+=this.value">9</button>
+                    <button value="*"onclick="display.value+=this.value">*</button>
+                <div>
+                    <button value="4"onclick="display.value+=4">4</button>
+                    <button value="5"onclick="display.value+=5">5</button>
+                    <button value="6"onclick="display.value+=6">6</button>
+                    <button value="-"onclick="display.value+='-'">-</button>
+                    
+                </div>
+                <div>
+                    <button value="3" onclick="display.value+=this.value">3</button>
+                    <button value="2" onclick="display.value+=this.value">2</button>
+                    <button value="1" onclick="display.value+=this.value">1</button>
+                    <button value="+" onclick="display.value+=this.value">+</button>
+    
+                </div>
+                <div>
+                    <button value="00" onclick="display.value+=this.value">00</button>
+                    <button value="0" onclick="display.value+=this.value">0</button>
+                    <button value="=" onclick="display.value=eval(display.value)">=</button>
+                    
+                    
+                </div>
+            </div>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                width: 100%;
+                height: 100vh;
+                background-color: #e3f9ff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .container{
+                background-color: #3a4452;
+                padding: 20px;
+                border-radius: 10px;
+            }
+            button{
+                border: 0;
+                outline: 0;
+                width: 60px;
+                height: 60px;
+                border-radius: 10px;
+                font-size: 20px;
+                color: white;
+                cursor: pointer;
+                margin: 10px;
+                background-color: transparent;
+                box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+            }
+            button[value="="]{
+                width: 140px;
+            }
+            input{
+                border: 0;
+                outline: 0;
+                width: 60px;
+                height: 60px;
+                border-radius: 10px;
+                font-size: 20px;
+                background: transparent;
+                margin: 10px;
+                font-size: 45px;
+                text-align: right;
+                color: white;
+                width:300px;
+            }
+
+
+
+        </style>
+        
+        <script>
+
+    
+        </script>
+    </body>
+</html>
